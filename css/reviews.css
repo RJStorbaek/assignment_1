@@ -1,0 +1,46 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 50%;
+  margin: 1rem auto;
+}
+.review__score {
+  border: 2px solid black;
+}
+.review__summary {
+  border: 2px solid black;
+}
+.review__text {
+  border: 2px solid black;
+}
+.writer-container {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+
+.review__avatar {
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+.review__avatar img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.review__writer {
+  margin: 0rem 0rem 0rem 1rem;
+}
+.review__name {
+  font-size: 2rem;
+}
+.review__prof {
+  font-size: 1rem;
+}

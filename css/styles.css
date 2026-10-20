@@ -1,0 +1,11 @@
+:root {
+  --background-color: #101010;
+  --text-color: #181818;
+  --content-background-color: rgb(68, 68, 68);
+  --content-color-nav: #fff;
+  --content-color-main: #ffffff;
+}
+
+* {
+  color: #bbb;
+}
