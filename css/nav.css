@@ -15,9 +15,10 @@ nav {
   flex-direction: row;
   border: 2px solid black;
 }
-.nav__button {
-  /* display: flex; */
-}
+
+/* .nav__button {
+  display: flex;
+} */
 
 @media (max-width: 992px) {
 }
