@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Useless Chatbot 2.0</title>
+    <title>Place Order</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -20,147 +20,148 @@
     </nav>
     <div class="banner-container">
       <div class="banner">
-        <div class="banner__content"></div>
-        <form>
-          <h2>Order Useless Chatbot 2.0</h2>
-          <p>Configure your new customer dissatisfaction solution.</p>
-          <fieldset>
-            <legend>1. Customer details</legend>
-            <label for="form__name">Full name</label>
-            <input
-              type="text"
-              name="full_name"
-              id="form__name"
-              class="form__name"
-              placeholder="Your Name"
-              required
-            />
-            <label for="form__email">Email address</label>
-            <input
-              type="email"
-              name="Email_address"
-              id="form__email"
-              class="form__email"
-              placeholder="you@example.com"
-              required
-            />
-            <label for="form__company">Company name</label>
-            <input
-              type="text"
-              name="Company_name"
-              id="form__company"
-              class="form__company"
-              placeholder="Your unfortunate business"
-              required
-            />
-          </fieldset>
-          <fieldset>
-            <legend>2. Subscription plan</legend>
-            <label>
-              <input type="Radio" id="basic" name="subscription" required />
-              Basic: Mild disappointment (9999€ / month)
-            </label>
-            <label>
+        <div class="banner__content">
+          <form class="form">
+            <h2>Order Useless Chatbot 2.0</h2>
+            <p>Configure your new customer dissatisfaction solution.</p>
+            <fieldset>
+              <legend>1. Customer details</legend>
+              <label for="form__name">Full name</label>
               <input
-                type="radio"
-                id="Professional"
-                name="subscription"
+                type="text"
+                name="full_name"
+                id="form__name"
+                class="form__name"
+                placeholder="Your Name"
                 required
               />
-              Professional: Advanced frustration (19999€ / month)
-            </label>
-            <label>
+              <label for="form__email">Email address</label>
               <input
-                type="radio"
-                id="Enterprise"
-                name="subscription"
+                type="email"
+                name="Email_address"
+                id="form__email"
+                class="form__email"
+                placeholder="you@example.com"
                 required
-              />Enterprise: Complete incompetence (39999€ / month)
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Customize your incompetence</legend>
-            <label for="form__personality">Chatbot Personality</label>
-            <select name="Chatbot_personality" id="form__personality">
-              <option value="passive-aggressive">Passive-aggressive</option>
-              <option value="overly-enthusiastic">Overly enthusiastic</option>
-              <option value="confidently-incorrect">
-                Confidently incorrect
-              </option>
-              <option value="completely-indifferent">
-                Completely indifferent
-              </option>
-            </select>
-            <div>
-              <p class="form__description">Additional features</p>
-
-              <label for="form__checkbox-infinite"
-                ><input
-                  type="checkbox"
-                  name="infinite_conversation_loops"
-                  id="form__checkbox-infinite"
-                />
-                Infinite conversation loops
+              />
+              <label for="form__company">Company name</label>
+              <input
+                type="text"
+                name="Company_name"
+                id="form__company"
+                class="form__company"
+                placeholder="Your unfortunate business"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <legend>2. Subscription plan</legend>
+              <label>
+                <input type="Radio" id="basic" name="subscription" required />
+                Basic: Mild disappointment (9999€ / month)
               </label>
+              <label>
+                <input
+                  type="radio"
+                  id="Professional"
+                  name="subscription"
+                  required
+                />
+                Professional: Advanced frustration (19999€ / month)
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="Enterprise"
+                  name="subscription"
+                  required
+                />Enterprise: Complete incompetence (39999€ / month)
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Customize your incompetence</legend>
+              <label for="form__personality">Chatbot Personality</label>
+              <select name="Chatbot_personality" id="form__personality">
+                <option value="passive-aggressive">Passive-aggressive</option>
+                <option value="overly-enthusiastic">Overly enthusiastic</option>
+                <option value="confidently-incorrect">
+                  Confidently incorrect
+                </option>
+                <option value="completely-indifferent">
+                  Completely indifferent
+                </option>
+              </select>
+              <div>
+                <p class="form__description">Additional features</p>
 
-              <label for="form__checkbox-excessive"
-                ><input
-                  type="checkbox"
-                  name="excessive_apologies"
-                  id="form__checkbox-excessive"
-                />Excessive apologies</label
-              >
+                <label for="form__checkbox-infinite"
+                  ><input
+                    type="checkbox"
+                    name="infinite_conversation_loops"
+                    id="form__checkbox-infinite"
+                  />
+                  Infinite conversation loops
+                </label>
 
-              <label for="form__checkbox-fake"
-                ><input
+                <label for="form__checkbox-excessive"
+                  ><input
+                    type="checkbox"
+                    name="excessive_apologies"
+                    id="form__checkbox-excessive"
+                  />Excessive apologies</label
+                >
+
+                <label for="form__checkbox-fake"
+                  ><input
+                    type="checkbox"
+                    name="Fake_human_agent_transfer"
+                    id="form__checkbox-fake"
+                  />Fake human agent transfer</label
+                >
+                <input
                   type="checkbox"
-                  name="Fake_human_agent_transfer"
-                  id="form__checkbox-fake"
-                />Fake human agent transfer</label
-              >
+                  name="automatic_context_deletion"
+                  id="form__checkbox-automatic"
+                />
+                <label for="form__checkbox-automatic"
+                  >Automatic context deletion</label
+                >
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>4. Activation details</legend>
+              <label for="form__date">Preferred activation date</label>
               <input
-                type="checkbox"
-                name="automatic_context_deletion"
-                id="form__checkbox-automatic"
-              />
-              <label for="form__checkbox-automatic"
-                >Automatic context deletion</label
-              >
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>4. Activation details</legend>
-            <label for="form__date">Preferred activation date</label>
-            <input
-              type="date"
-              name="preferred_activation_date"
-              id="form__date"
-              required
-            />
-            <label for="form__instructions"
-              >Special instructions (we won't read them)</label
-            >
-            <textarea
-              id="form__instructions"
-              name="special_instructions"
-              placeholder="Tell us what your customers need. We promise to ignore it."
-            ></textarea>
-            <label for="form__terms"
-              ><input
-                type="checkbox"
-                id="form__terms"
-                name="terms_and_conditions"
+                type="date"
+                name="preferred_activation_date"
+                id="form__date"
                 required
-              />I understand that customer satisfaction is neither guaranteed
-              nor intended.</label
-            >
-            <button type="submit">Place your order</button>
-            <p>
-              After pressing this button, our staff will turn up unannounced in
-              your server room.
-            </p>
-          </fieldset>
-        </form>
+              />
+              <label for="form__instructions"
+                >Special instructions (we won't read them)</label
+              >
+              <textarea
+                id="form__instructions"
+                name="special_instructions"
+                placeholder="Tell us what your customers need. We promise to ignore it."
+              ></textarea>
+              <label for="form__terms"
+                ><input
+                  type="checkbox"
+                  id="form__terms"
+                  name="terms_and_conditions"
+                  required
+                />I understand that customer satisfaction is neither guaranteed
+                nor intended.</label
+              >
+              <button type="submit">Place your order</button>
+              <p>
+                After pressing this button, our staff will turn up unannounced
+                in your server room.
+              </p>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
     <footer>

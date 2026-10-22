@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   grid-template-rows: auto auto auto;
-  /* grid-template-rows: repeat(3, 4rem); */
-  /* grid-template-columns: 4rem 200px 200px 200px;*/
+  background-color: var(--card-background-color)
   width: 100%;
   max-width: 650px;
   margin-inline: auto;
@@ -84,6 +83,7 @@
   display: block;
   height: 100%;
   width: 100%;
+  color: var(--review-color-score);
 }
 .writer-container {
   display: flex;
