@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Place Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -24,7 +30,7 @@
           <form class="form">
             <h2>Order Useless Chatbot 2.0</h2>
             <p>Configure your new customer dissatisfaction solution.</p>
-            <fieldset>
+            <fieldset class="form__customer">
               <legend>1. Customer details</legend>
               <label for="form__name">Full name</label>
               <input
@@ -54,10 +60,16 @@
                 required
               />
             </fieldset>
-            <fieldset>
+            <fieldset class="form__subscription">
               <legend>2. Subscription plan</legend>
               <label>
-                <input type="Radio" id="basic" name="subscription" required />
+                <input
+                  type="Radio"
+                  id="basic"
+                  name="subscription"
+                  required
+                  value="basic"
+                />
                 Basic: Mild disappointment (9999€ / month)
               </label>
               <label>
@@ -66,6 +78,7 @@
                   id="Professional"
                   name="subscription"
                   required
+                  value="professional"
                 />
                 Professional: Advanced frustration (19999€ / month)
               </label>
@@ -75,11 +88,12 @@
                   id="Enterprise"
                   name="subscription"
                   required
+                  value="enterprise"
                 />Enterprise: Complete incompetence (39999€ / month)
               </label>
             </fieldset>
-            <fieldset>
-              <legend>Customize your incompetence</legend>
+            <fieldset class="form__customize">
+              <legend>3. Customize your incompetence</legend>
               <label for="form__personality">Chatbot Personality</label>
               <select name="Chatbot_personality" id="form__personality">
                 <option value="passive-aggressive">Passive-aggressive</option>
@@ -99,6 +113,7 @@
                     type="checkbox"
                     name="infinite_conversation_loops"
                     id="form__checkbox-infinite"
+                    value="infinite"
                   />
                   Infinite conversation loops
                 </label>
@@ -108,6 +123,7 @@
                     type="checkbox"
                     name="excessive_apologies"
                     id="form__checkbox-excessive"
+                    value="excessive"
                   />Excessive apologies</label
                 >
 
@@ -116,19 +132,21 @@
                     type="checkbox"
                     name="Fake_human_agent_transfer"
                     id="form__checkbox-fake"
+                    value="fake"
                   />Fake human agent transfer</label
                 >
-                <input
-                  type="checkbox"
-                  name="automatic_context_deletion"
-                  id="form__checkbox-automatic"
-                />
                 <label for="form__checkbox-automatic"
-                  >Automatic context deletion</label
+                  ><input
+                    type="checkbox"
+                    name="automatic_context_deletion"
+                    id="form__checkbox-automatic"
+                    value="automatic"
+                  />
+                  Automatic context deletion</label
                 >
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__activation">
               <legend>4. Activation details</legend>
               <label for="form__date">Preferred activation date</label>
               <input

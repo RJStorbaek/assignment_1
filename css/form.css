@@ -8,18 +8,96 @@
   border: 2px solid var(--border-color);
   border-radius: 12px;
 }
-
+.form > h2,
+.form > p {
+  text-align: center;
+}
 .form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--card-background-color);
+  border: 1px var(--border-color) solid;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.form legend {
+  color: var(--accent-color);
+
+  font-weight: 700;
+}
+.form label {
+  font-size: 1rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="date"],
+.form select,
+.form textarea {
+  background-color: var(--input-color-main);
+  color: var(--content-color-main);
+  width: 100%;
+  padding: 0.75rem;
+  border: var(--border-color) 1px solid;
+  font-family: inherit;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  margin: 0;
+  flex-shrink: 0;
+  width: auto;
+}
+
+.form select {
+  background-color: var(--input-color-main);
+  color: var(--content-color-main);
+}
+
+.form input[type="date"] {
+  background-color: var(--input-color-main);
+  color: var(--content-color-main);
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.form textarea {
+  background-color: var(--input-color-main);
+  color: var(--content-color-main);
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 0.75rem;
+  }
+  .form fieldset {
+    padding: 1rem;
+  }
+}
+
+.form__customize > div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.form__subscription {
+.form__subscription label,
+.form__customize div label,
+.form__activation label:has(input[type="checkbox"]) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.form__personality {
+button {
+  color: var(--content-color-main);
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  border: 0px;
+  font-family: inherit;
 }
 
-.form__activation {
+button:hover {
+  cursor: pointer;
 }

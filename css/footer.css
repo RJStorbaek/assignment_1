@@ -16,11 +16,6 @@ footer {
   border: 2px solid black;
 }
 
-@media (max-height: 560px) {
-  footer {
-  
-}
-
 .disclaimer {
   font-size: 1rem;
   margin-bottom: 1rem;
